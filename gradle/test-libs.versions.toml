@@ -1,0 +1,13 @@
+[versions]
+kotlin-version = "1.9.22"
+ktor-version = "2.3.7"
+
+[libraries]
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor-version" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin-version" }
+
+[bundles]
+test = [
+    "ktor-server-test-host",
+    "kotlin-test-junit"
+]
